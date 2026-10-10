@@ -53,23 +53,23 @@ Use code with caution.
 
 2. Install Dependencies
 
-bash
-# Set up the Backend
-cd server
-npm install
+     bash
+     # Set up the Backend
+     cd server
+     npm install
 
-# Set up the Frontend
-cd ../client
-npm install
-Use code with caution.
+   # Set up the Frontend
+     cd ../client
+     npm install
+     Use code with caution.
 
 3. Configure the Environment
 
-Create a .env file inside the server/ directory and add the following configuration:
-env
-PORT=5000
-MONGODB_URI=mongodb://127.0.0.1:27017/bharat-trust-bank
-Use code with caution.
+   Create a .env file inside the server/ directory and add the following configuration:
+   env
+   PORT=5000
+   MONGODB_URI=mongodb://127.0.0.1:27017/bharat-trust-bank
+   Use code with caution.
 
 💻 Running the Application
 
