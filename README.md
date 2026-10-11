@@ -1,16 +1,12 @@
-Markdown
 # 🏦 Bharat Trust Bank
-
-A Next-Generation Full-Stack MERN Digital Banking Platform
+### A Next-Generation Full-Stack MERN Digital Banking Platform
 
 ## 📖 Overview
-
 **Bharat Trust Bank** is a secure, high-performance digital banking simulator built with pure modern JavaScript (ES Modules). The application replicates a real-world online banking ecosystem, empowering users to execute instant UPI transfers, manage digital insurance policies, calculate loan EMIs interactively, and track an immutable transaction ledger.
 
 ---
 
 ## ⚡ Key Features
-
 * **Executive Banking Dashboard:** Get real-time visibility into your financial health. Monitor primary savings balances, analyze total inflows, and track active liabilities from a single, unified view.
 * **Instant UPI & QR Center:** Execute peer-to-peer UPI transfers instantly. Features dynamic QR code generation and a 12-digit UTR (Unique Transaction Reference) settlement tracking system.
 * **Interactive Loans & EMI Calculator:** Plan your finances using dynamic sliders to calculate EMIs for personal and home loans, complete with an auto-approved ledger disbursement simulation.
@@ -40,10 +36,12 @@ A Next-Generation Full-Stack MERN Digital Banking Platform
 
 ### 1. Clone the Workspace
 ```bash
-git clone [https://github.com/priyanshu20k/bharat-trust-bank.git](https://github.com/priyanshu20k/bharat-trust-bank.git)
+git clone https://github.com/priyanshu20k/bharat-trust-bank.git
 cd "Bharat Trust Bank"
-2. Install Dependencies
-Bash
+```
+
+### 2. Install Dependencies
+```bash
 # Set up the Backend
 cd server
 npm install
@@ -51,34 +49,38 @@ npm install
 # Set up the Frontend
 cd ../client
 npm install
-3. Configure the Environment
-Create a .env file inside the server/ directory and add the following configuration:
+```
 
-Code snippet
+### 3. Configure the Environment
+Create a `.env` file inside the `server/` directory and add the following configuration:
+```env
 PORT=5000
 MONGODB_URI=mongodb://127.0.0.1:27017/bharat-trust-bank
-💻 Running the Application   
-Database Check: Ensure your local MongoDB instance (or MongoDB Compass) is running on port 27017. (Note: The application will automatically fall back to an in-memory database if MongoDB is unreachable).   
+```
 
-Start the Server: Open a terminal in the server/ directory and run:   
+---
 
-Bash
-npm run dev
-Launch: Open http://localhost:5000 in your browser to experience the platform.   
+## 💻 Running the Application
 
-🤖 AI Development Journey (Powered by Kiro)   
-This platform was built in close collaboration with Kiro, serving as an embedded, context-aware architectural assistant.   
+* **Database Check:** Ensure your local MongoDB instance (or MongoDB Compass) is running on port 27017. *(Note: The application will automatically fall back to an in-memory database if MongoDB is unreachable).*
+* **Start the Server:** Open a terminal in the `server/` directory and run:
+  ```bash
+  npm run dev
+  ```
+* **Launch:** Open `http://localhost:5000` in your browser to experience the platform.
 
-Development Impact   
-Kiro accelerated the codebase lifecycle by maintaining strict architectural alignment between the React frontend and the Express backend. By handling boilerplate generation and analyzing terminal error logs, it allowed for an exclusive focus on core banking logic, database resilience, and user experience.   
+---
 
-Specific AI-Assisted Milestones   
-Component Engineering: Co-designed LoansView.jsx and UpiPaymentView.jsx, integrating complex mathematical EMI formulas with highly responsive Tailwind CSS layouts.   
+## 🤖 AI Development Journey (Powered by Kiro)
+This platform was built in close collaboration with **Kiro**, serving as an embedded, context-aware architectural assistant.
 
-API Scaffolding: Built standardized RESTful endpoints in server/routes/bankingRoutes.js featuring clean JSON payloads and proper HTTP status codes.   
+### Development Impact
+Kiro accelerated the codebase lifecycle by maintaining strict architectural alignment between the React frontend and the Express backend. By handling boilerplate generation and analyzing terminal error logs, it allowed for an exclusive focus on core banking logic, database resilience, and user experience.
 
-Resilience Engineering: Programmed the dual-mode database engine in server/db/mongo.js, preventing server crashes through automated in-memory degradation when MongoDB goes offline.   
+### Specific AI-Assisted Milestones
+* **Component Engineering:** Co-designed `LoansView.jsx` and `UpiPaymentView.jsx`, integrating complex mathematical EMI formulas with highly responsive Tailwind CSS layouts.
+* **API Scaffolding:** Built standardized RESTful endpoints in `server/routes/bankingRoutes.js` featuring clean JSON payloads and proper HTTP status codes.
+* **Resilience Engineering:** Programmed the dual-mode database engine in `server/db/mongo.js`, preventing server crashes through automated in-memory degradation when MongoDB goes offline.
+* **Runtime Consolidation:** Resolved a critical `EADDRINUSE` port 3000 conflict by integrating Vite directly into Express middleware (`vite.middlewares`), unifying the stack onto a single port.
+* **Modernization:** Migrated legacy TypeScript files into pure JavaScript ES Modules (`"type": "module"`), resolving import path discrepancies and cleaning up stale dependencies.
 
-Runtime Consolidation: Resolved a critical EADDRINUSE port 3000 conflict by integrating Vite directly into Express middleware (vite.middlewares), unifying the stack onto a single port.   
-
-Modernization: Migrated legacy TypeScript files into pure JavaScript ES Modules ("type": "module"), resolving import path discrepancies and cleaning up stale dependencies.
